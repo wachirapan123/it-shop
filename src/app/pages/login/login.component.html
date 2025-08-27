@@ -1,0 +1,43 @@
+<div class="login-container">
+  <div class="login-card card shadow-lg p-4">
+    <div class="card-body">
+      <h2 class="card-title text-center mb-4">Welcome Back</h2>
+
+      <form (ngSubmit)="login()">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input
+            type="text"
+            id="username"
+            [(ngModel)]="username"
+            name="username"
+            class="form-control form-control-lg"
+            placeholder="Enter your username"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            id="password"
+            [(ngModel)]="password"
+            name="password"
+            class="form-control form-control-lg"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg w-100">
+          Login
+        </button>
+      </form>
+
+      <div class="text-center mt-3">
+        <a routerLink="/" class="text-decoration-none">Back to Home</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+.admin-dashboard {
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  position: fixed; /* คงที่ด้านซ้าย */
+  top: 0;
+  left: 0;
+}
+
+.content {
+  margin-left: 220px; /* เว้นให้ sidebar */
+  background-color: #f1f2f6;
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sidebar .nav-link.active {
+  background-color: #6c5ce7;
+  border-radius: 0.5rem;
+}
+
+.sidebar .nav-link.disabled {
+  opacity: 0.5;
+  pointer-events: none; /* กดไม่ได้ */
+}
+
+.card {
+  border-radius: 0.75rem;
+}
